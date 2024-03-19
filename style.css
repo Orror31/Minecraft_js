@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+body{
+    font-family: "poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+nav{
+    height: 10px;
+}
+header{
+    height: 100px;
+}
+header .ul{
+    color: aliceblue !important;
+}
+*{
+    text-decoration: none !important;
+    
+}
+.logo{
+    width: 300px;
+    
+}
+.btn-login{
+    background-color: rgb(17, 40, 15);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-left: 3px solid rgb(249, 251, 249);
+    border-right: 3px solid rgb(231, 247, 231); 
+}
+.nav-link{
+    color: white !important;
+    font-weight: bold !important;
+}
+.navbar-nav .nav-link{
+    color: green !important;
+    font-weight: bold;
+}
+
+.container-fluid{
+    flex: 1;
+}
+.navbar{
+    margin-bottom: 20px;
+}
+
+.get-minecraft{
+    background-image: url(https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Hero_Realms_1920x1080_01.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: inherit;
+    background-position-x: center;
+    margin: 0px auto;
+}
+.btn-get{
+    font-size: 20px;
+    background-color: rgb(59, 195, 59);
+    padding: 10px;
+    margin: 30px 0;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.redownload{
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+    border-left: 3px solid #6b6969;
+    border-bottom: 3px solid #6b6969;
+}
+.redownload .border-download{
+    border-radius: 0%;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.redownload .border-download:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.discover-text{
+    font-size: 60px;
+    font-family: 'Minecraft', sans-serif;
+
+}
+
+/* Card */
+.card{
+    border: none !important;
+}
+.card-body{
+    background-color: rgb(26, 26, 26);
+    color: #fff !important;
+}
+.card-body p, .i{
+    color: #6b6a6a;
+}
+.download-icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;    
+    padding: 5px;
+}
+.explore{
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.explore-text{
+    margin-top: 40px;
+    margin-right: 10px;
+}
+/* Carousel */
+.carousel{
+    background: transparent;
+
+}
+.carousel-control-prev-icon{
+    background-color: green;
+    border: 2px solid white;
+}
+.carousel-control-next-icon{
+    background-color: green;
+    border: 2px solid white;
+}
+#demo{
+    margin: 0 auto;
+    border: 2px solid rgb(11, 2, 2);
+    box-shadow: 2px 2px 2px rgb(12. 11, 11);
+}
+.carousel-img{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+/* On screen that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px){
+    body{
+        background-color: #0866ff;
+        color: white;
+    }
+}
+
+/* On screen that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    body{
+        background-color: olive;
+        color: white;
+    }
+}
+
+/** Footer*/
+.h4{
+    font-family: 'Minecraft', sans-serif !important;
+}
+footer{
+    background-color: black;
+}
+.icon-bar{
+    display: flex;
+    margin-top: 30px;
+}
+
+.ul{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.icon-bar .ul .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+.ul li{
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.ul li:hover{
+    background-color: #ffffff;
+}
+.ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+
+}
+.ul li span{
+    position: absolute;
+}
+.ul li .title{
+    color: var(--clr);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+    justify-content: center;
+}
+.ul li:hover .title{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+.ul .fb{
+    background-color: #3b3b3b;
+    color:#ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.ul .fb:hover{
+    background-color: #0866ff;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.ul .yt{
+    background-color: #3b3b3b;
+    color:#ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.ul .yt:hover{
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.ul .twitter{
+    background-color: #3b3b3b;
+    color:#ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ul .twitter:hover{
+    background-color: #08a0e8;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.ul .ig{
+    background-color: #3b3b3b;
+    color:#ffffff!important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ul .ig:hover {
+    background: linear-gradient(rgb(56, 12, 252),rgb(148, 0, 211),rgb(247, 0, 247), rgb(255, 111, 0));
+    color: #ffffff;
+}
+
+.ul .tele{
+    background-color: #3b3b3b;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ul .tele:hover{
+    background-color: #3cb7f5;
+    color: #fff;
+    border-radius: 30px;
+}
